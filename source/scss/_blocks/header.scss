@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .header__list {
+    display: flex;
+    margin-right: auto;
+  }
+  
+  .header__list-item {
+    margin-right: 15px;
+  }
+  
+  .header__contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__contact-found {
+    margin-right: 24px;
+  }

@@ -1,0 +1,215 @@
+.footer {
+    margin-top: 60px;
+    padding: 100px 110px;
+}
+
+.background {
+    background: #434343;
+}
+
+.footer__wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.title__footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.title__footer-list-item {
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.title__footer-list-item:hover {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.title__footer-list-item:focus {
+    color: #FFFFFF;
+    opacity: 0.2;
+}
+
+.title__footer-list {
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+.nav-item {
+    margin-top: 32px;
+}
+
+.customer-item {
+    margin-top: 32px;
+}
+
+.footer__title {
+    border-top: 1px solid #666666;
+    width: 380px;
+    padding-top: 27px;
+}
+
+.footer__list {
+    margin-bottom: 15px;
+}
+
+.footer__list-company {
+    font-weight: 400;
+    margin-right: 25px;
+    color: #FFFFFF;
+}
+
+.footer__list-item {
+    font-weight: 400;
+    margin-right: 121px;
+    color: #FFFFFF;
+}
+
+.footer__list-connect {
+    font-weight: 400;
+    color: #A2A2A2;
+}
+
+.footer__list-connect:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.footer__list-connect:focus {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.connect-item {
+    margin-top: 32px;
+}
+
+.input__footer {
+    border: #666666;
+    background: #666666;
+    font-size: 16px;
+    height: 40px;
+}
+
+.socials-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.soc-footer:hover {
+    opacity: 0.5;
+}
+
+.soc-footer:active {
+    opacity: 0.2;
+}
+
+.btn-footer {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 9px 22px;
+    width: 81px;
+    height: 43px;
+    margin-left: -5px;
+}
+
+.footer__inner-wrap {
+    display: flex;
+    border-top: 1px solid #666666;
+    margin-top: 28px;
+    width: 1180px;
+    padding-top: 38px;
+}
+
+.rating__wrap {
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 142px;
+}
+
+.rating__group {
+    position: relative;
+    margin: 0 0;
+    margin-top: 4px;
+    align-items: center; 
+    margin-left: 3px;
+}
+
+.label-rating { 
+    width: 13px; 
+    height: 13px; 
+}
+
+.rating__group:not(:checked) > input {
+    display: none;
+}
+
+.rating__group:not(:checked) > label {
+    float: right; 
+    cursor: pointer; 
+    font-size: 17px; 
+    margin-right: 7px;
+    background-image: url('/img/icon/staroff.svg');
+    background-size: cover;
+    width: 13px;
+    height: 13px;
+}
+
+.rating__group:not(:checked) > label:before {
+    content: '';
+    position: absolute; 
+    width: 13px; 
+    height: 13px; 
+    top: 0; 
+}
+
+.rating__group > input:checked ~ label {
+    color: #FFFFFF; 
+    background-image: url('/img/icon/staron.svg');
+    width: 13px;
+    height: 13px;
+}
+
+.rating__group:not(:checked) > label:hover,
+.rating__group:not(:checked) > label:hover ~ label {
+    background-image: url('/img/icon/starhover.svg');
+    background-repeat: no-repeat; 
+    width: 13px; 
+    height: 13px; 
+    color: #FFFFFF;   
+}
+
+.rating__group > input:checked + label:hover,
+.rating__group > input:checked + label:hover ~ label,
+.rating__group > input:checked ~ label:hover,
+.rating__group > input:checked ~ label:hover ~ label,
+.rating__group > label:hover ~ input:checked ~ label {
+    background-image: url('/img/icon/starhover.svg');
+    width: 13px;
+    height: 13px;
+}
+
+.rating__group > label:active {
+    position: relative;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+

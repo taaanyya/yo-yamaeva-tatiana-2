@@ -1,0 +1,141 @@
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 20px;
+}
+
+.breadcrumbs-item-home::after {
+    content: '';
+    display: inline-block;
+    background-image: url('../icon/vector__right.svg');
+    margin-left: 20px;
+    width: 8px;
+    height: 12px;
+}
+
+.breadcrumbs-item-text {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.breadcrumbs-item-catalog {
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+// .servises__list-catalog {
+//     display: flex;
+    // margin-top: 42px;
+    // margin-left: -19px;
+// }
+
+// .image {
+//     position: relative;
+//     margin-left: 20px;
+//     background: green;
+// }
+
+// .link-title {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 32px;
+//     text-align: center;
+//     position: absolute;
+//     left: 26.79%;
+//     right: 27.14%;
+//     top: 38.15%;
+//     bottom: 38.15%;
+//     color: #FFFFFF;
+// }
+
+// .link {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 32px;
+//     text-transform: uppercase;
+//     position: absolute;
+//     left: 37.14%;
+//     right: 37.5%;
+//     top: 44.07%;
+//     bottom: 44.07%;
+//     color: #FFFFFF;
+// }
+
+// .servises__list-item {
+//     display: flex;
+//     margin-top: 23px;
+//     margin-left: 181px;
+// }
+
+// .link__accessories {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 32px;
+//     text-transform: uppercase;
+//     position: absolute;
+//     left: 15.71%;
+//     right: 15.71%;
+//     top: 44.07%;
+//     bottom: 44.07%;
+//     color: #FFFFFF;
+// }
+
+// .link-active:hover {
+//     text-decoration: underline;
+// }
+
+// .link-active:focus {
+//     text-decoration: underline;
+// }
+
+.heading {
+    margin-left: 200px;
+}
+
+.heading__title {
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+// .title__over {
+//     font-family: 'Open Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 22px;
+//     width: 680px;
+//     height: 44px;
+//     display: flex;
+//     margin-top: 15px;
+//     margin-left: 200px;
+// }
+
+// .title__over-one {
+//     font-family: 'Open Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 22px;
+//     width: 680px;
+//     height: 66px;
+//     display: flex;
+//     margin-top: 15px;
+//     margin-left: 200px;
+// }

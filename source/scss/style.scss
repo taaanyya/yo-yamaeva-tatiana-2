@@ -1,0 +1,527 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+@import "catalog";
+@import "toys";
+
+/*
+  Import all other blocks
+*/
+@import "_blocks/container";
+@import "_blocks/header";
+@import "_blocks/footer";
+/*
+  Ниже пример подключения других блоков
+
+  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
+  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+
+  Для именования селекторов давайте придерживаться стиля two dashes
+  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
+  block-name__element-name--modificator
+*/
+
+/*
+  Код ниже нужно удалить, он добавлен просто для примера
+  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
+  то он должен был бы быть в файле _blocks/coming-soon.scss
+*/
+
+/*Стилизация мэйна*/
+
+.banner {
+  position: relative;
+  height: 372px;
+  background-color: #EEE4DB;
+  display: flex;
+  margin-top: 131px;
+  z-index: 1;
+}
+
+.handle {
+  display: flex;
+  flex-direction: column;
+}
+
+.handle__swich {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 73px;
+  margin-left: 28px;
+  margin-top: 17px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.swich {
+  width: 31px;
+  height: 3px;
+  margin-left: 31px;
+  margin-bottom: 20px;
+  background-color: #D6CAC2;
+}
+
+.swich:hover {
+  cursor: pointer;
+  background: rgba(30, 6, 6, 0.6);
+}
+
+.active {
+  background: rgba(30, 6, 6, 0.6);
+}
+
+.subtitle {
+  background: #C29974;
+  margin-top: -12px;
+}
+
+.subtitle__text {
+  font-family: Open Sans;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.banner__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  margin-top: 55px;
+  width: 307px;
+  height: 88px;
+}
+
+.title__banner {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.title-two {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px; 
+  line-height: 26px;
+  color: #1E0606;
+}
+
+.monster {
+  position: absolute;
+  top: -59px;
+  left: 446px;
+  width: 636px;
+  height: 431px;
+}
+
+// .servises__list {
+//   display: flex;
+//   flex-wrap: nowrap;
+// }
+
+.image {
+  position: relative;
+  margin-top: 41px;
+  margin-right: 20px;
+  background: green;
+}
+
+// .link-title {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 32px;
+//   text-align: center;
+//   position: absolute;
+//   left: 26.79%;
+//   right: 27.14%;
+//   top: 38.15%;
+//   bottom: 38.15%;
+//   color: #FFFFFF;
+// }
+
+// .link {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 32px;
+//   text-transform: uppercase;
+//   position: absolute;
+//   left: 37.14%;
+//   right: 37.5%;
+//   top: 44.07%;
+//   bottom: 44.07%;
+//   color: #FFFFFF;
+// }
+
+// .link__accessories {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 32px;
+//   text-transform: uppercase;
+//   position: absolute;
+//   left: 15.71%;
+//   right: 15.71%;
+//   top: 44.07%;
+//   bottom: 44.07%;
+//   color: #FFFFFF;
+// }
+
+// .link-active:hover {
+//   text-decoration: underline;
+// }
+
+// .link-active:focus {
+//   text-decoration: underline;
+// }
+
+.control {
+  display: flex;
+}
+
+.control-arrow {
+  margin-top: 30px;
+  margin-right: 6px;
+}
+
+.desc {
+  font-family: 'Open Sans';
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 32px;
+  width: 580px;
+  height: 44px;
+}
+
+.delivery__content {
+  margin-top: 98px;
+}
+
+.picture {
+ margin-top: -500px;
+ background: green;
+}
+
+.content {
+  margin-left: 600px;
+  // display: flex;      ???
+  flex-direction: column;
+  
+}
+
+.title__over{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 480px;
+  height: 66px;
+  margin-top: 33px;
+}
+
+.title__over-one {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 480px;
+  height: 88px;
+  margin-top: 14px;
+}
+
+.subject__content {
+  font-weight: 700;
+  padding: 11px;
+  margin-top: 6px;
+  color: #1E0606;
+}
+
+.subject__title-two {
+  margin-top: 29px;
+}
+
+.subject__title-three {
+  margin-top: 20px;
+}
+
+.title__allocator {
+  background: #E1F0F7;
+  width: 326px;
+  height: 55px;
+  padding-left: 60px;
+  margin-left: -60px;
+}
+
+.socials {
+  display: flex;
+  margin-top: 44px;
+  justify-content: space-between;
+}
+
+.socials-title {
+  display: none;
+}
+
+.about__text {
+  display: flex;
+  margin-top: 114px;
+}
+
+.design {
+  background: #E1F0F7;
+}
+
+.headline__title {
+  margin: -20px;
+  margin-left: 30px;
+}
+
+.title__desc {
+  width: 483px;
+  margin-left: 30px;
+}
+
+.content__about {
+  width: 543px;
+}
+
+.title__about {
+  margin-top: 26px;
+  margin-left: 30px;
+}
+
+.button__click {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  width: 543px;
+  margin-left: 57px;
+  background: #E1F0F7;
+}
+
+.contact__text {
+  padding-top: 39px;
+  padding-left: 30px;
+}
+
+.map-widget {
+  width: 483px;
+  height: 196px;
+  margin-top: -82px;
+  margin-left: 632px;
+}
+
+
+/*popup*/
+
+.popup__color {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(125, 151, 218, 0.8);
+}
+.popup__wrapper {
+  display: flex;
+  z-index: 10;
+}
+
+.popup { 
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  z-index: 99;
+}
+
+.open {
+  display: flex;
+}
+
+.popup-close {
+  margin-left: 10px;
+  background: none;
+  background-image: url('../icon/cross.svg');
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.popup-close::not(:checked) > input {
+  display: none;
+}
+
+.popup-close:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  background-image: url('../icon/crossoff.svg');
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+
+.popup-close:not(:checked) > label:before {
+  content:'';
+  width: 15px;
+  height: 15px;
+}
+
+.popup-close > input:checked ~ label {
+  color: #FFFFFF; 
+  background-image: url('../icon/crosson.svg');
+  width: 15px;
+  height: 15px;   
+}
+
+.popup-close:not(:checked) > label:hover,
+.popup-close:not(:checked) > label:hover ~ label {
+  background-image: url('../icon/crosshover.svg');
+  background-repeat: no-repeat;
+  width: 13px; 
+  height: 13px; 
+  color: #FFFFFF;   
+}
+
+.popup-close > input:checked + label:hover,
+.popup-close > input:checked + label:hover ~ label,
+.popup-close > input:checked ~ label:hover,
+.popup-close > input:checked ~ label:hover ~ label,
+.popup-close > label:hover ~ input:checked ~ label {
+  background-image: url('../icon/crosshover.svg');
+}
+
+.popup-close:hover {
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-form {
+  width: 680px;
+  height: 542px;
+  padding: 50px;
+  z-index: 4;
+  background: #E5EAF8;
+}
+
+.label__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldself-double {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.fieldself-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldself-email {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.field-inner__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.popup__text {
+  margin-top: 20px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #C29974;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-checkbox:checked+label::before {
+  width: 15px;
+  height: 15px;
+  background-image: url('../icon/checkmark.svg');
+}
+
+.popup-click {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-popup {
+  width: 600px;
+  height: 50px;
+}
+
+.input-popup-double {
+  width: 290px;
+  height: 50px;
+}
+
+.input-message {
+  width: 600px;
+  height: 150px;
+} 
+
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
